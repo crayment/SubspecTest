@@ -1,0 +1,43 @@
+{
+  "name": "SubspecTest",
+  "version": "0.1.0",
+  "summary": "A short description of SubspecTest.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SubspecTest",
+  "license": "MIT",
+  "authors": {
+    "Cody Rayment": "crayment16@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SubspecTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "resource_bundles": {
+    "SubspecTest": [
+      "SubspecTest/Assets/*.png"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Main",
+      "source_files": "SubspecTest/Classes/Main/**/*",
+      "dependencies": {
+        "Freddy": [
+
+        ]
+      }
+    },
+    {
+      "name": "Sub1",
+      "source_files": "SubspecTest/Classes/Sub1**/*",
+      "dependencies": {
+        "Freddy": [
+
+        ]
+      }
+    }
+  ]
+}

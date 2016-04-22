@@ -1,0 +1,26 @@
+PODS:
+  - Freddy (2.0.2)
+  - Nimble (3.2.0)
+  - Quick (0.9.2)
+  - SubspecTest/Main (0.1.0):
+    - Freddy
+  - SubspecTest/Sub1 (0.1.0):
+    - Freddy
+
+DEPENDENCIES:
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+  - SubspecTest/Main (from `../`)
+  - SubspecTest/Sub1 (from `../`)
+
+EXTERNAL SOURCES:
+  SubspecTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Freddy: e53713b8d5be02dbf5f4132c44d899d99eb09a6b
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+  SubspecTest: 2572ab42b08f1f021058038cd26baf6f776581ce
+
+COCOAPODS: 0.39.0

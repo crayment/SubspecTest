@@ -29,10 +29,19 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SubspecTest/Classes/**/*'
   s.resource_bundles = {
     'SubspecTest' => ['SubspecTest/Assets/*.png']
   }
+  
+  s.subspec 'Main' do |s|
+    s.source_files = 'SubspecTest/Classes/Main/**/*'
+    s.dependency 'Freddy'
+  end
+  
+  s.subspec 'Sub1' do |s|
+    s.source_files = 'SubspecTest/Classes/Sub1**/*'
+    s.dependency 'Freddy'
+  end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
