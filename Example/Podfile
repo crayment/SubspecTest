@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'SubspecTest_Example', :exclusive => true do
+  pod 'SubspecTest', :path => '../'
+end
+
+target 'SubspecTest_Tests', :exclusive => true do
+  pod 'SubspecTest', :path => '../'
+
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+end
